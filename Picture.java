@@ -65,11 +65,14 @@ public class Picture
         sun2.changeSize(700);
         sun2.makeVisible();
         
-        sun.slowMoveVertical(150);
-        sun2.makeVisible() ;
+
        
     }
-
+    public void moveSun()
+    {
+        sun.slowMoveVertical(150);
+        sun2.makeVisible() ;
+    }
     /**
      * Change this picture to black/white display
      */
