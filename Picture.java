@@ -72,6 +72,11 @@ public class Picture
     {
         sun.slowMoveVertical(150);
         sun2.makeVisible() ;
+        sun2.changeColor("black");
+        sun.changeColor("black");
+        wall.changeColor("black");
+        roof.changeColor("black");
+        window.changeColor("white");
     }
     /**
      * Change this picture to black/white display
