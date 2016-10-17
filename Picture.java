@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle sun2;
+    private Person chico;
 
     /**
      * Constructor for objects of class Picture
@@ -65,6 +66,10 @@ public class Picture
         sun2.changeSize(700);
         sun2.makeVisible();
         
+        chico = new Person();
+        chico.moveHorizontal(-200);
+        chico.moveVertical(100);
+        chico.makeVisible();
 
        
     }
@@ -77,6 +82,11 @@ public class Picture
         wall.changeColor("black");
         roof.changeColor("black");
         window.changeColor("white");
+    }
+    public void moverChico()
+    {
+        chico.slowMoveHorizontal(100);
+        chico.slowMoveVertical(-80);
     }
     /**
      * Change this picture to black/white display
